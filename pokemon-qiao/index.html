@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Demo</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="controller.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.animate.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.brighttheme.css">
+ 	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div id="content">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Enter Pockmon name/id to see type evaluation</h3>
+			  </div>
+			  <div class="panel-body">
+			  	<div class="row">
+			  		<div class="col-md-8">
+			  			<input type="text" id="pk1" placeholder="Enter name/id">
+			    		<br>
+			    		<br>
+			    		<input type="text" id="pk2"  placeholder="Enter name/id">
+			  		</div>
+			  		<div class="col-md-4" class="object_center">
+			  			<button class="btn btn-info" onclick="submit()"> Go! </button>
+			  		</div>
+			  	</div>
+			    
+			    
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Type Evaluation Result</h3>
+			  </div>
+			  <div class="panel-body">
+			    <p>The Winner Is ....</p>
+			    <p id="winner"><strong></strong></p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</div>
+
+</body>
+</html>
